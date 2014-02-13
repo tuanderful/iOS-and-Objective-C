@@ -9,14 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @interface Car : NSObject {
-    int _year;                                  // use an underscore to denote instance variables
-    NSString *_make;
-    NSString *_model;
+    int _year;                  // convention: use an underscore to denote instance variables (_year), where year is getter
+    NSString *_make;            // NSString is an object, so * denotes _make is pointer to an object
+    NSString *_model;           // NS stands for NeXTStep, NeXT computer's OS.
     float _fuelAmount;
 }
 
+// - Denotes instance methods. Invoke with [myCar printCarInfo]
+// + Denotes class methods. Invoke with [Car someMethod]
 
-// Constructor
+// custom init method
 - (id)initWithMake: (NSString *)make
              model: (NSString *)model
               year: (int)year
