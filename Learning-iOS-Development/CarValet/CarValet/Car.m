@@ -50,40 +50,46 @@
     // Note that we don't check for year or fuelAmount. When we
     //  initialize, either we do a full initialization [initWithMake]
     //  or we call the [init], which defaults the year and fuel amount.
-    if(!_make) return;
-    if(!_model) return;
-    
-    NSLog(@"Car Make: %@", _make);                                  // NSLog is wrapper around printf
-    NSLog(@"Car Model: %@", _model);                                // Print Objects: %@
-    NSLog(@"Car Year: %d", _year);                                  // Log Integer: %d
-    NSLog(@"Number of Gallons in Tank: %0.2f", _fuelAmount);        // Log & Format Float: %0.2f
+    if(self.make && self.model) {
+        // We could access with _make, or use dot notation (self.make) after defining properties
+        NSLog(@"Car Make: %@", self.make);                                  // NSLog is wrapper around printf
+        NSLog(@"Car Model: %@", self.model);                                // Print Objects: %@
+        NSLog(@"Car Year: %d", self.year);                                  // Log Integer: %d
+        NSLog(@"Number of Gallons in Tank: %0.2f", self.fuelAmount);        // Log & Format Float: %0.2f
+    } else {
+        NSLog(@"Car undefined: no make or model specified.");
+    }
 }
 
 // Accessor Methods
-- (float)fuelAmount
-{
-    return _fuelAmount;
-}
+// We can replace these accessor methods by using @property in the @interface
+// This creates the _fuelAmount instance variable, a (float)fuelAmount accessor
+// and a (void)setFuelAmount: (float)fuelAmount mutator (at compile time)
 
-- (int)year
-{
-    return _year;
-}
-
-- (NSString*)make
-{
-    return [_make copy];          // returning objects: make a copy
-}
-
-- (NSString*)model
-{
-    return [_model copy];
-}
-
-
-- (void)setFuelAmount: (float)fuelAmount
-{
-    _fuelAmount = fuelAmount;
-}
+//- (float)fuelAmount
+//{
+//    return _fuelAmount;
+//}
+//
+//- (int)year
+//{
+//    return _year;
+//}
+//
+//- (NSString*)make
+//{
+//    return [_make copy];          // returning objects: make a copy
+//}
+//
+//- (NSString*)model
+//{
+//    return [_model copy];
+//}
+//
+//
+//- (void)setFuelAmount: (float)fuelAmount
+//{
+//    _fuelAmount = fuelAmount;
+//}
 
 @end
