@@ -8,6 +8,7 @@
 
 #import "TH_ViewController.h"
 #import "Car.h"
+#import "HybridCar.h"
 
 @interface TH_ViewController ()
 
@@ -39,13 +40,18 @@
                                         model:@"Accord"
                                          year:2010
                                    fuelAmount:12.5f];
-    
-    //[otherCar printCarInfo];
-    
     [otherCar shoutMake];
-    
-    //otherCar.showLiters = NO;
+    otherCar.showLiters = YES;
     [otherCar printCarInfo];
+    
+    Car *myHybrid = [[HybridCar alloc] initWithMake:@"Toyota"
+                                              model:@"Prius"
+                                               year:2012
+                                         fuelAmount:8.3f
+                                                MPG:42.0f];
+    // showLiters defaults to NO
+    [myHybrid printCarInfo];
+    
     
 }
 

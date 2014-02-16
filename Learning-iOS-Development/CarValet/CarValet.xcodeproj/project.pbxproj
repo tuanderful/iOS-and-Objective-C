@@ -23,6 +23,7 @@
 		171B626718ACD55500F22464 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 171B626518ACD55500F22464 /* InfoPlist.strings */; };
 		171B626918ACD55500F22464 /* CarValetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B626818ACD55500F22464 /* CarValetTests.m */; };
 		171B627418ACD60100F22464 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 171B627318ACD60100F22464 /* Car.m */; };
+		17C556EF18B05E9200575A33 /* HybridCar.m in Sources */ = {isa = PBXBuildFile; fileRef = 17C556EE18B05E9200575A33 /* HybridCar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		171B626818ACD55500F22464 /* CarValetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CarValetTests.m; sourceTree = "<group>"; };
 		171B627218ACD60100F22464 /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
 		171B627318ACD60100F22464 /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		17C556ED18B05E9200575A33 /* HybridCar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HybridCar.h; sourceTree = "<group>"; };
+		17C556EE18B05E9200575A33 /* HybridCar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HybridCar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				171B624118ACD55500F22464 /* Supporting Files */,
 				171B627218ACD60100F22464 /* Car.h */,
 				171B627318ACD60100F22464 /* Car.m */,
+				17C556ED18B05E9200575A33 /* HybridCar.h */,
+				17C556EE18B05E9200575A33 /* HybridCar.m */,
 			);
 			path = CarValet;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				171B625418ACD55500F22464 /* TH_ViewController.m in Sources */,
 				171B627418ACD60100F22464 /* Car.m in Sources */,
 				171B624718ACD55500F22464 /* main.m in Sources */,
+				17C556EF18B05E9200575A33 /* HybridCar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +487,7 @@
 				171B626E18ACD55500F22464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		171B626F18ACD55500F22464 /* Build configuration list for PBXNativeTarget "CarValetTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				171B627118ACD55500F22464 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
