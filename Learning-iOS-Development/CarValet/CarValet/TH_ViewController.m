@@ -7,6 +7,7 @@
 //
 
 #import "TH_ViewController.h"
+#import "Car.h"
 
 @interface TH_ViewController ()
 
@@ -18,6 +19,29 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    Car *myCar = [[Car alloc] init];
+    
+    [myCar printCarInfo];
+
+    myCar.make = @"Ford";
+    myCar.model = @"Escape";
+    myCar.year = 2014;
+    myCar.fuelAmount = 10.0f;
+    
+    [myCar printCarInfo];
+    
+    Car *otherCar = [[Car alloc] initWithMake:@"Honda"
+                                        model:@"Accord"
+                                         year:2010
+                                   fuelAmount:12.5f];
+    
+    [otherCar printCarInfo];
+    
 }
 
 - (void)didReceiveMemoryWarning
