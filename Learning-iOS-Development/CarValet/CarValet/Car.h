@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Car : NSObject {
-    // here, we define private instance variables
+    // here, we define local instance variables
 
     //int _year;                  // convention: use an underscore to denote instance variables (_year), where year is getter
     //NSString *_make;            // NSString is an object, so * denotes _make is pointer to an object
@@ -17,10 +17,11 @@
     //float _fuelAmount;
 }
 
-@property int year;
-@property NSString *make;
-@property NSString *model;
-@property float fuelAmount;
+@property (readonly) int year;
+@property (readonly) NSString *make;
+@property (readonly) NSString *model;
+@property (getter = isShowingLiters) BOOL showLiters;  //define a custom getter, because myCar.isShowingLiters is better than myCar.showLiters
+@property (setter = setTheFuelAmountTo:, nonatomic) float fuelAmount;
 
 
 // - Denotes instance methods. Invoke with [myCar printCarInfo]
@@ -39,6 +40,7 @@
 //- (int)year;
 //- (NSString*)make;
 //- (NSString*)model;
+- (void)shoutMake;
 
 
 @end

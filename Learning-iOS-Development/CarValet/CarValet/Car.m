@@ -11,6 +11,13 @@
 
 #import "Car.h"
 
+// We redefine the interface so that these variables are read/write within the class
+@interface Car ()
+@property (readwrite) int year;
+@property NSString *make;
+@property NSString *model;
+@end
+
 @implementation Car {
     BOOL    isALemon;           // curly braces after implementation => local instance variable
 }
@@ -59,6 +66,19 @@
     } else {
         NSLog(@"Car undefined: no make or model specified.");
     }
+}
+
+- (void)shoutMake
+{
+    self.make = [self.make uppercaseString];
+}
+
+// override (auto-generated, or "synthesized") getter for fuelAmount
+- (float)fuelAmount {
+    if (self.isShowingLiters) {
+        return (_fuelAmount * 3.7854);
+    }
+    return _fuelAmount;
 }
 
 // Accessor Methods

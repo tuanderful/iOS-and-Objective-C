@@ -24,22 +24,27 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    Car *myCar = [[Car alloc] init];
+    //Car *myCar = [[Car alloc] init];
     
-    [myCar printCarInfo];
+    //[myCar printCarInfo];
 
-    myCar.make = @"Ford";
-    myCar.model = @"Escape";
-    myCar.year = 2014;
-    myCar.fuelAmount = 10.0f;
+    //myCar.make = @"Ford";
+    //myCar.model = @"Escape";
+    //myCar.year = 2014;
+    //myCar.fuelAmount = 10.0f;
     
-    [myCar printCarInfo];
+    //[myCar printCarInfo];
     
     Car *otherCar = [[Car alloc] initWithMake:@"Honda"
                                         model:@"Accord"
                                          year:2010
                                    fuelAmount:12.5f];
     
+    //[otherCar printCarInfo];
+    
+    [otherCar shoutMake];
+    
+    //otherCar.showLiters = NO;
     [otherCar printCarInfo];
     
 }
