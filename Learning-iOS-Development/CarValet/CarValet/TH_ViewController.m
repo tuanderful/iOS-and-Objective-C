@@ -25,7 +25,20 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-    //Car *myCar = [[Car alloc] init];
+
+    // Challenge 2.1
+    Car *carA = [[Car alloc] init];
+    [carA printCarInfo];
+    
+    Car *carB = [[Car alloc] initWithMake:@"Honda"
+                                     year:2010
+                               fuelAmount:12.5f];
+    [carB printCarInfo];
+    
+    Car *carC = [[Car alloc] initWithModel:@"Pinto"
+                                      year:2010
+                                fuelAmount:12.5f];
+    [carC printCarInfo];
     
     //[myCar printCarInfo];
 
@@ -51,7 +64,6 @@
                                                 MPG:42.0f];
     // showLiters defaults to NO
     [myHybrid printCarInfo];
-    
     
 }
 

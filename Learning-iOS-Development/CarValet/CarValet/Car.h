@@ -33,6 +33,14 @@
               year: (int)year
         fuelAmount: (float)fuelAmount;
 
+- (id)initWithMake: (NSString *)make
+              year: (int)year
+        fuelAmount: (float)fuelAmount;
+
+- (id)initWithModel: (NSString *)model
+               year: (int)year
+         fuelAmount: (float)fuelAmount;
+
 // Methods - removed getter/setter once we defined @property
 - (void)printCarInfo;
 //- (float)fuelAmount;
