@@ -5,20 +5,20 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>D922B7C9-ABD0-417F-ADF4-FDB31745483D</string>
+	<string>FE1428BD-A0B1-4551-8041-9F55BD834981</string>
 	<key>IDESourceControlProjectName</key>
-	<string>CarValet</string>
+	<string>Turkey</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>EDA0B167-0F44-4A75-B8B5-62957568DD7F</key>
 		<string>https://github.com/tuanderful/iOS-and-Objective-C.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Learning-iOS-Development/02_CarValet/CarValet.xcodeproj/project.xcworkspace</string>
+	<string>ObjectiveC-Programming/03_Turkey/Turkey/Turkey.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EDA0B167-0F44-4A75-B8B5-62957568DD7F</key>
-		<string>../../../..</string>
+		<string>../../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/tuanderful/iOS-and-Objective-C.git</string>

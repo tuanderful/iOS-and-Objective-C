@@ -14,17 +14,26 @@
 
 @end
 
-@implementation TH_ViewController
+@implementation TH_ViewController {
+    // local instance variables
+    NSMutableArray *arrayOfCars;
+    NSInteger displayedCarIndex;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    arrayOfCars = [[NSMutableArray alloc] init];
+    displayedCarIndex = 0;
 }
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
+    
+    self.totalCarsLabel.text = @"New Text!";
 
     // Challenge 2.1
     Car *carA = [[Car alloc] init];
@@ -73,4 +82,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)newCar:(id)sender {
+    Car *newCar = [[Car alloc] init];
+    
+}
+
+- (IBAction)previousCar:(id)sender {
+}
+
+- (IBAction)nextCar:(id)sender {
+}
 @end
