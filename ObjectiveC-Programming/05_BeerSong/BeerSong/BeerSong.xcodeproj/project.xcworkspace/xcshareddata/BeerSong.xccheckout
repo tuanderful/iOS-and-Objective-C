@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>ACCB21D9-56D0-4495-B129-689E4F691FC8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>BeerSong</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>EDA0B167-0F44-4A75-B8B5-62957568DD7F</key>
+		<string>https://github.com/tuanderful/iOS-and-Objective-C.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ObjectiveC-Programming/05_BeerSong/BeerSong/BeerSong.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>EDA0B167-0F44-4A75-B8B5-62957568DD7F</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/tuanderful/iOS-and-Objective-C.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>EDA0B167-0F44-4A75-B8B5-62957568DD7F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>EDA0B167-0F44-4A75-B8B5-62957568DD7F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-and-Objective-C</string>
+		</dict>
+	</array>
+</dict>
+</plist>
